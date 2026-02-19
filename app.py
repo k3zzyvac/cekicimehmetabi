@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     """Renders the main page of the website."""
-    return render_template('cekici_sitesi.html')
+    return render_template('index.html')
 
 @app.route("/galeri")
 def galeri():
@@ -13,4 +13,4 @@ def galeri():
     return render_template('galeri.html')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
